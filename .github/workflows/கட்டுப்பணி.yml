@@ -29,18 +29,18 @@ jobs:
       uses: Nizhal/zip-release@0.7.1
       with:
         type: 'zip'
-        filename: 'கோப்புசில்லா64.zip'
+        filename: 'கோப்புசில்லா.zip'
         exclusions: '*.git*'
         
     - name: 🤠பிரி      
       uses: Nizhal/action-zip@v1
       with:
-        args: unzip கோப்புசில்லா64.zip -d கோப்புசில்லா64
+        args: unzip கோப்புசில்லா.zip -d கோப்புசில்லா
       
     - name: 🤐மறுகட்டு      
       uses: Nizhal/action-zip@v1
       with:
-        args: zip -r App.zip கோப்புசில்லா64
+        args: zip -r App.zip கோப்புசில்லா
  
     - name: ♻நீக்கு
       uses: Nizhal/delete-tag-and-release@v1.0
